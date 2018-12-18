@@ -1,0 +1,4 @@
+%{
+  "two_phase_commit": {:git, "git@github.com:qixxit/two_phase_commit.git", "543bb25270e8948e776f4c63c76efece0a0fe399", []},
+  "uuid": {:hex, :uuid, "1.1.8", "e22fc04499de0de3ed1116b770c7737779f226ceefa0badb3592e64d5cfb4eb9", [:mix], [], "hexpm"},
+}
