@@ -1,5 +1,5 @@
 defmodule Checkout do
-  alias TwoPhaseCommit.Store.InMemory, as: Store
+  alias Traktor.Store.InMemory, as: Store
 
   defmodule State do
     defstruct [:authorization_ref, :booking_ref, :capture_ref, :amount, :product_ref]
@@ -47,7 +47,7 @@ defmodule Checkout do
   end
 
   defp run_action(action, ref, revision, state, args) do
-    TwoPhaseCommit.apply(
+    Traktor.apply(
       action,
       state,
       args,
