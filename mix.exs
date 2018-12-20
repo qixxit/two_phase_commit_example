@@ -21,7 +21,7 @@ defmodule Checkout.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:two_phase_commit, git: "git@github.com:qixxit/two_phase_commit.git"},
+      {:traktor, "~> 0.1"},
       {:uuid, "~> 1.1"}
     ]
   end

@@ -1,6 +1,6 @@
 defmodule Action.Authorize do
   require Logger
-  @behaviour TwoPhaseCommit.Action
+  @behaviour Traktor.Action
 
   @impl true
   def prepare(checkout_state, payment) do
